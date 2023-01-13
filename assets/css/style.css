@@ -1,3 +1,4 @@
+/*Common*/
 *{
     padding: 0;
     margin: 0;
@@ -6,6 +7,25 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-third {
+    width: 33.33333%;
+}
+.col-half {
+    width: 50%;
+}
+.text-center{
+    text-align: center !important;
+}
+/* Main*/
 #main{
 
 }
@@ -142,12 +162,7 @@ html{
 #content .member-list{
     margin-top: 48px;
 }
-#content .member-item{
-    float: left;
-    width: 33.33333%;
-    text-align: center;
 
-}
 #content .member-name{
     font-size: 15px;
 }
@@ -191,14 +206,10 @@ html{
 }
 .places-list{
     margin-top:32px;
-    margin-left: -8px;
-    margin-right: -8px;
     padding-bottom: 48px;
 }
 .place-item{
-    float: left;
     width: 33.33333%;
-    padding: 0px 8px;
 }
 .place-img{
     width: 100%;
@@ -259,6 +270,7 @@ html{
     min-height: 200px;
     position: relative;
     max-width: calc(100% - 32px);
+    animation: modalFadeIn ease 0.8s;
 }
 .modal .modal-header{
     background-color: #009688;
@@ -317,4 +329,14 @@ html{
 }
 .modal-footer a{
    color: #2196F3;
+}
+@keyframes modalFadeIn{
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

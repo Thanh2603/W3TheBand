@@ -22,8 +22,38 @@ html{
 .col-half {
     width: 50%;
 }
+.col-full{
+    width: 100%;
+}
 .text-center{
     text-align: center !important;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.margin-top-8{
+    margin-top: 8px !important;
+}
+.margin-top-16{
+    margin-top: 16px !important;
+}
+.pull-right {
+    float: right !important;
+}
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
 }
 /* Main*/
 #main{
@@ -138,6 +168,7 @@ html{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding: 64px 0 112px;
 }
 #content .section-heading{
     text-align: center;
@@ -206,7 +237,6 @@ html{
 }
 .places-list{
     margin-top:32px;
-    padding-bottom: 48px;
 }
 .place-item{
     width: 33.33333%;
@@ -235,21 +265,8 @@ html{
     margin-top: 15px;
     line-height: 1.4;
 }
-.place-buy-btn{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
-}
-.place-buy-btn:hover{
-    color: #000;
-    background-color: #ccc;
-}
-#footer{
 
-}
+
 .modal{
     position: fixed;
     top: 0;
@@ -329,6 +346,62 @@ html{
 }
 .modal-footer a{
    color: #2196F3;
+}
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.send-submit{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+}
+.send-submit:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.map-section img{
+    width: 100%;
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .socials-list{
+    font-size: 24px;
+}
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .socials-list a:hover,#footer .copyright a{
+    color: rgba(0, 0, 0, 0.3);
+}
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+
 }
 @keyframes modalFadeIn{
     from {
